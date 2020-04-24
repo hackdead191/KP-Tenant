@@ -106,13 +106,13 @@ $enzz = json_encode($zaza);
 
 $text .= "result";
 $text .= "\n";
-$text .= $zaza[0][Unit];
+$text .= $zaza[0][id];
 $text .= " - ";
-$text .= $zaza[0][Status];
+$text .= $zaza[0][name];
 $text .= " - ";
-$text .= $zaza[0][POS Name];
+$text .= $zaza[0][num];
 $text .= " - ";
-$text .= $zaza[0][Company Code];
+$text .= $zaza[0][other];
     $mreply = array(
         'replyToken' => $replyToken,
         'messages' => array( 
