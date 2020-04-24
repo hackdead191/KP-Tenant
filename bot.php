@@ -137,5 +137,4 @@ if (isset($mreply)) {
     $result = json_encode($mreply);
     $client->replyMessage($mreply);
 }  
-echo "OK";
 ?>
