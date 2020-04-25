@@ -1,6 +1,6 @@
 ﻿<?php
 #-------------------------[Include]-------------------------#
-require_once('./line_class.php');
+require_once('./include/line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 #-------------------------[Token]-------------------------#
 $channelAccessToken = 'B5NOu/S/9mAhz6xvblcr+h5O/gMgVV8fjplOiXhrvordrjzY/kgumcaxzJVY1tYCkX8drOg7LKwQctkQHKIeHOW4JXoseurNSDkY2poqShv9jfr+1EGjZPm4WTx6bfMQ1oKR2azkS/nfbwK2gsfBRQdB04t89/1O/w1cDnyilFU='; 
@@ -42,7 +42,7 @@ $modex = file_get_contents('./user/' . $userId . 'mode.json');
 
 
 if ($modex == 'Normal') {
-    $uri = "https://script.google.com/macros/s/AKfycbzx477tvr29z5gko0NN4m_X7bV54AFODY_x8fUtwLWxY48P_hs7/exec";
+    $uri = "https://script.google.com/macros/s/AKfycbzw_YL6MhrETxrBEgIu9cMqTZ8DrlUXVwCYhvHZeaXtUE50L_cB/exec"; 
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $results = array_filter($json['user'], function($user) use ($command) {
