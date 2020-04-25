@@ -7,7 +7,7 @@ $channelAccessToken = 'B5NOu/S/9mAhz6xvblcr+h5O/gMgVV8fjplOiXhrvordrjzY/kgumcaxz
 $channelSecret = '42bf4fdee9c9b1ffa200ea1e464b7adb';
 #-------------------------[Events]-------------------------#
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
-$userId     = $client->parseEvents()[0]['source']['userId'];
+$userId     = $client->parseEvents()[0]['source']['U71abf9b48c7d7a1109bb25e53b80fd0a'];
 $groupId    = $client->parseEvents()[0]['source']['groupId'];
 $replyToken = $client->parseEvents()[0]['replyToken'];
 $timestamp  = $client->parseEvents()[0]['timestamp'];
